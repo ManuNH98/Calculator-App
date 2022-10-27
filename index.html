@@ -2,14 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <link rel="stylesheet" href="/style.css">
     <script type="module" src="/main.js"></script>
   </head>
-  <body>
+  <body class="bg-mainBg1">
     <div id="app">
+      <div id="container" class="flex justify-center items-center p-10 desktop:p-20">
+        <div id="calculator" class="flex flex-col gap-y-4">
+          <div id="theme" class="flex items-center justify-between text-textLight1">
+            <div>
+              <h1>calc</h1>
+            </div>
+            <div class="flex justify-center items-end gap-x-3">
+              <h2>THEME</h2>
+              <div>
+                <div class="flex gap-x-3">
+                  <p>1</p>
+                  <p>2</p>
+                  <p>3</p>
+                </div>
+                <div>
+                  <button>hola</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="display" class="flex justify-end bg-screenBg1 p-5 rounded-lg">
+            <p class="font-bold text-numbers text-textLight1">399,981</p>
+          </div>
+          <div id="toggles" class="flex flex-col gap-y-3 rounded-lg bg-toggleBg1 p-5">
+            <div class="flex justify-between items-center gap-3">
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">7</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">8</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">9</button>
+              <button class="flex justify-center bg-keyBgDel1 w-1/4 px-7 py-3 rounded-lg font-bold text-textLight1 border-keyShadowDel1 border-b-2">DEL</button>
+            </div>
+            <div class="flex justify-between items-center gap-3">
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">4</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">5</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">6</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">+</button>
+            </div>
+            <div class="flex justify-between items-center gap-3">
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">1</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">2</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">3</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">-</button>
+            </div>
+            <div class="flex justify-between items-center gap-3">
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">.</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">0</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">/</button>
+              <button class="flex justify-center bg-keyBgNum1 w-1/4 px-8 rounded-lg text-numbers font-bold text-textDark1 border-keyShadowNum1 border-b-2">*</button>
+            </div>
+            <div class="flex justify-between items-center gap-3">
+              <button class="flex justify-center bg-keyBgDel1 w-1/2 px-7 py-3 rounded-lg font-bold text-textLight1 border-keyShadowDel1 border-b-2">RESET</button>
+              <button class="flex justify-center bg-keyBgEqual1 w-1/2 px-8 rounded-lg text-numbers font-bold text-textLight1 border-keyShadowEqual1 border-b-2">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

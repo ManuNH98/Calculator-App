@@ -27,7 +27,7 @@ module.exports = {
 
       // Text 1
       textDark1: "hsl(221, 14%, 31%)",
-      textLight1: "",
+      textLight1: "hsl(0, 0%, 100%)",
 
       // Theme 2
       mainBg2: "hsl(0, 0%, 90%)",
